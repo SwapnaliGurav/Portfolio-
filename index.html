@@ -1,182 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swapnali Gurav | Laravel Full-Stack Developer</title>
+<meta name="description" content="Laravel Full-Stack Developer in Satara, India. Custom web applications, admin systems and WordPress sites for businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- HEADER DESIGN -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+<div class="loader" id="loader"><div class="lg">SG</div><div class="lb"><i></i></div></div>
+<div class="progress" id="progress"></div>
+<div class="glow" id="glow"></div>
+<canvas id="net"></canvas>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+<header class="header">
+  <a href="#home" class="logo">Swapnali Gurav</a>
+  <button class="burger" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  <nav class="nav" id="nav">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    <a href="#contact" class="nav-cta mag">Hire me</a>
+  </nav>
+</header>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio"> Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-text">
+    <span class="badge"><i class="dot"></i> Available for full-time roles and client projects</span>
+    <h1 id="name">Swapnali Gurav</h1>
+    <h2 class="role">Laravel Full-Stack Developer</h2>
+    <p class="lead">I build secure, fast and maintainable web applications for businesses. From admin systems and booking platforms to production dashboards, I take products from idea to live deployment.</p>
+    <div class="cta">
+      <a href="#contact" class="btn mag">Let's talk</a>
+      <a href="My Resume .pdf" download="Swapnali-Gurav-Resume.pdf" class="btn ghost mag"><i class="fa-solid fa-download"></i> Download resume</a>
+    </div>
+    <div class="social">
+      <a href="https://github.com/SwapnaliGurav" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/swapnali-gurav-99684b287" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:guravswapnali1512@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="hero-side tilt-s">
+    <div class="avatar"><img src="images/avatar.png" alt="Swapnali Gurav"></div>
+    <div class="code">
+      <div class="code-bar"><i></i><i></i><i></i><span>OrderController.php</span></div>
+      <pre id="code"></pre>
+    </div>
+  </div>
+</section>
 
+<div class="logos reveal">
+  <p>Delivered websites across</p>
+  <div><span>Agro-tourism</span><span>Education</span><span>Construction</span><span>Culture &amp; Libraries</span><span>Digital Marketing</span><span>Manufacturing</span></div>
+</div>
 
-    <!-- HOME SECTION DESIGN -->
-     <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hi, Myself</h3>
-            <h1>Swapnali Gurav</h1>
-            <h3>And I'm a <span class="text"></span></h3>
-            <p>Computer Engineering Student expertise in programming languages. Dedicated and eager to contribute
-                technical skills to a dynamic organization in the field of computer Engineering.
-                </p>
-            <div class="social-media">
-                <a href="https://github.com/SwapnaliGurav"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/swapnali-gurav-99684b287"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-            <a href="My Resume .pdf" download="Swapnali-Gurav-Resume"  class="btn">Download CV</a>
-        </div>
+<section class="sec" id="about">
+  <h2 class="title reveal">About me</h2>
+  <div class="about-grid">
+    <div class="reveal">
+      <p>I'm a Laravel developer based in Satara with experience in both client delivery and enterprise software. At Jijau Software I run websites end to end: design, development, hosting and ongoing stability. Earlier, at Copeland India (Emerson Climate Technologies), I built internal tools that replaced manual data entry on the factory floor.</p>
+      <p>I care about readable code, sensible database design and sites that load fast on any device. I also mentor teammates, so I'm comfortable explaining technical decisions to non-technical people.</p>
+    </div>
+    <div class="stats reveal">
+      <div><b data-n="10" data-s="+">0</b><span>client websites delivered</span></div>
+      <div><b data-n="2" data-s="">0</b><span>enterprise tools built</span></div>
+      <div><b data-n="6" data-s="">0</b><span>industries served</span></div>
+      <div><b data-n="1" data-s="">0</b><span>team mentored</span></div>
+    </div>
+  </div>
+  <div class="stack reveal">
+    <span><i class="fa-brands fa-laravel"></i>Laravel</span><span><i class="fa-brands fa-php"></i>PHP</span><span><i class="fa-solid fa-database"></i>MySQL</span><span><i class="fa-brands fa-wordpress"></i>WordPress</span><span><i class="fa-brands fa-shopify"></i>Shopify</span><span><i class="fa-brands fa-js"></i>JavaScript</span><span><i class="fa-brands fa-html5"></i>HTML5</span><span><i class="fa-brands fa-css3-alt"></i>CSS3</span><span><i class="fa-brands fa-bootstrap"></i>Bootstrap</span><span><i class="fa-brands fa-git-alt"></i>Git</span><span><i class="fa-brands fa-github"></i>GitHub</span>
+  </div>
+</section>
 
-        <div class="home-img">
-            <img src="images/1.png" alt="">
-        </div>
-     </section>
+<section class="sec" id="services">
+  <h2 class="title reveal">What I can do for your business</h2>
+  <div class="cards three">
+    <article class="card spot reveal"><i class="fa-solid fa-laptop-code"></i><h3>Custom web applications</h3><p>Laravel apps built on clean MVC architecture: booking systems, admission portals, reporting tools and more.</p></article>
+    <article class="card spot reveal"><i class="fa-solid fa-user-shield"></i><h3>Secure admin panels</h3><p>Authentication and role-based access so your team can manage content, enquiries and data safely.</p></article>
+    <article class="card spot reveal"><i class="fa-brands fa-wordpress"></i><h3>WordPress and Shopify</h3><p>Fast, SEO-friendly business sites and stores your team can update without a developer.</p></article>
+    <article class="card spot reveal"><i class="fa-solid fa-gauge-high"></i><h3>Performance tuning</h3><p>Optimised MySQL queries and lean front-ends so pages stay quick as your data grows.</p></article>
+    <article class="card spot reveal"><i class="fa-solid fa-language"></i><h3>Multilingual sites</h3><p>Bilingual English and Marathi websites that reach local customers without losing polish.</p></article>
+    <article class="card spot reveal"><i class="fa-solid fa-cloud-arrow-up"></i><h3>Hosting and handover</h3><p>Deployment, server setup and team training, so the site keeps running after launch.</p></article>
+  </div>
+  <h3 class="sub reveal">How a project runs</h3>
+  <ol class="steps">
+    <li class="reveal"><b>1</b><h4>Understand</h4><p>Goals, users and scope agreed up front.</p></li>
+    <li class="reveal"><b>2</b><h4>Design</h4><p>Page flow and responsive layouts.</p></li>
+    <li class="reveal"><b>3</b><h4>Build</h4><p>Laravel back-end, tested features.</p></li>
+    <li class="reveal"><b>4</b><h4>Launch</h4><p>Deployment, handover and support.</p></li>
+  </ol>
+</section>
 
-     <!-- ABOUT  SECTION DESIGN -->
-     <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/1.png" alt="">
-        </div>
+<section class="sec" id="experience">
+  <h2 class="title reveal">Experience</h2>
+  <div class="timeline" id="timeline">
+    <div class="line"><i id="lineFill"></i></div>
+    <article class="job reveal"><h3>Web Developer and Trainer</h3><h4>Jijau Software Pvt Ltd, Satara</h4>
+      <ul><li>Deliver 10+ custom Laravel and WordPress websites for external clients, from design to hosting.</li><li>Own the full project lifecycle and keep live sites stable after deployment.</li><li>Manage databases for large WordPress installs, protecting uptime and data integrity.</li><li>Train teammates on Laravel and WordPress best practices.</li></ul></article>
+    <article class="job reveal"><h3>Application Developer</h3><h4>Copeland India (Emerson Climate Technologies), Pune</h4>
+      <ul><li>Built a Daily Production Reporting System that cut manual data-entry time.</li><li>Delivered a barcode-based Rack and Pallet Management System with real-time inventory tracking and automated reports.</li><li>Tuned database queries to improve performance and reliability.</li></ul></article>
+    <article class="job reveal"><h3>Freelance Web Developer</h3><h4>Remote</h4>
+      <ul><li>Built animated scroll effects, service sections and dynamic contact forms for client sites.</li><li>Delivered responsive layouts with smooth navigation on every device.</li></ul></article>
+  </div>
+</section>
 
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h1>Frontend Developer</h1>
-            <p>Hello! I am Swapnali Gurav, a passionate and motivated frontend web developer eager to embark on a professional journey in the world of web development. With a foundation in the latest web technologies and a strong desire to learn and grow, I am excited to contribute to the creation of engaging and visually appealing websites.</p>
-            <!-- <a href="#" class="btn">Read more</a> -->
-        </div>
-     </section>
+<section class="sec" id="projects">
+  <h2 class="title reveal">Projects</h2>
+  <a class="gh reveal" href="https://github.com/SwapnaliGurav?tab=repositories" target="_blank" rel="noopener">
+    <i class="fa-brands fa-github gh-ico"></i>
+    <div class="gh-body">
+      <h3>All my projects are on GitHub</h3>
+      <p>Laravel applications, WordPress builds and practice projects, with source code you can read. Open the repositories to see my work and commit history.</p>
+      <div class="tags"><i>Laravel</i><i>PHP</i><i>MySQL</i><i>JavaScript</i><i>Bootstrap</i><i>WordPress</i></div>
+    </div>
+    <span class="btn gh-btn">View all repositories <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+  </a>
+  <h3 class="sub reveal">Education</h3>
+  <div class="edu-list">
+    <article class="edu-item reveal"><i class="fa-solid fa-graduation-cap"></i><time>2020 - 2024</time><h3>Bachelor of Technology (CSE)</h3><p>Dyanshree Institute of Engineering and Technology, Satara</p><span>CGPA 7.95</span></article>
+    <article class="edu-item reveal"><i class="fa-solid fa-book-open"></i><time>2020</time><h3>Senior Secondary (12th)</h3><p>Y.C.I.S, Satara, Maharashtra</p><span>58%</span></article>
+    <article class="edu-item reveal"><i class="fa-solid fa-school"></i><time>2018</time><h3>Secondary School (10th)</h3><p>R.K.G.K.M.V., Atit, Maharashtra</p><span>87.80%</span></article>
+  </div>
+</section>
 
-
-     <!-- SERVICES SECTION DESIGN  -->
-     <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class="fa-solid fa-code"></i>
-                <h3>Web Development</h3>   
-                <p>As a web developer, I have robust experience in frontend development, utilizing HTML, CSS, Bootstrap, and JavaScript to create responsive and interactive user interfaces. On the backend, I proficiently use PHP to handle server-side logic and ensure seamless communication between the server and client. Additionally, I have substantial experience with MySQL for managing and querying relational databases, ensuring data integrity and performance.</p>
-                <!-- <a href="#" class="btn">Read More</a> -->
-            </div>
-            
-            <div class="services-box">
-                <i class="fa-brands fa-java"></i>
-                <h3>Java Development</h3>   
-                <p>As a beginner in Java development, start by setting up your development environment with JDK and an IDE like IntelliJ IDEA or Eclipse. Learn basic syntax, variables, data types, operators, and control structures. Move on to Object-Oriented Programming (OOP) concepts such as classes, objects, inheritance, polymorphism, encapsulation, and abstraction. Familiarize yourself with the Java Collections Framework, exception handling, I/O operations, and multithreading. Explore web development using Servlets, JSP, and frameworks like Spring</p>
-                <!-- <a href="#" class="btn">Read More</a> -->
-            </div>
-            
-            <div class="services-box">
-                <i class="fa-brands fa-python"></i>
-                <h3>Python Development</h3>   
-                <p>
-                    As a beginner in Python development, start by setting up your development environment with Python and an IDE like PyCharm or VS Code. Learn basic syntax, variables, data types, operators, and control structures. Move on to Object-Oriented Programming (OOP) concepts such as classes, objects, inheritance, polymorphism, encapsulation, and abstraction. Familiarize yourself with data structures like lists, tuples, sets, and dictionaries, and learn about exception handling and file I/O operations</p>
-                <!-- <a href="#" class="btn">Read More</a> -->
-            </div>
-        </div>
-     </section>
-
-
-     <!-- PORTFOLIO SECTION DESIGN  -->
-      <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/img1.webp" alt="">
-                <div class="portfolio-layer">
-                    <h4>Object Detection with e-commerce</h4>
-                    <p>Object Detection in E-commerce is a revolutionary concept which will take E-commerce to another level. One can
-                        compare the price of different products from various web merchants. Labeling, Categorizing, screening various E- commerce website for the same product can be tedious and take valuable time. Image analysis utilizing machine learning
-                        can ease the process and make it faster than ever .</p>
-                    <!-- <i class="fa-solid fa-up-right-from-square"></i> -->
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/img2.webp" alt="">
-                <div class="portfolio-layer">
-                    <h4>Quizzie</h4>
-                    <p>These Project is based on Python, HTML, CSS, MYSQL Languages. In Quiz Management is a Web Application. Quizzie
-                        application provides facility to attempt quiz anywhere and anythime . It saves time since user does need to wait for
-                        results.!</p>
-                    <!-- <i class="fa-solid fa-up-right-from-square"></i> -->
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/img3.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Sign Language Recognition</h4>
-                    <p>These Project is Based on Python Language. This type of gesture-based language allows people to convey ideas and
-                        thoughts easily overcoming the barriers caused by difficulties from hearing issues.Sign language is a natural & visual
-                        from of language that uses movements & Expression to convey meaning between people. </p>
-                </div>
-            </div>
-        </div>
-      </section>
-
-
-
-      <!-- CONTACT SECTION DESIGN  -->
-      <section id="contact">
-        <div class="contact">
-          <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-          <div class="contact-left-title">
-            <h2 class="heading">Contact</h2>
-            <hr>
-          </div>
-          <input type="hidden" name="access_key" value="df1e8ab3-40e1-42eb-8abd-d6b6eba284af">
-            <div class="input-box">
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email Name">
-        </div>
-    
-        <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Email Subject">
-        </div>
-          <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
-           <button type="submit" class="btn btn-primary btn-lg">Submit </button> 
-        </form>
-        </div>
-      </section>
-
-      <!-- FOOTER DESIGN  -->
-      <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by @swapnali | All Rights Reserved.</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
-        </div>
-      </footer>
-
-      <!-- SCROLL REVEAL  -->
-      <script src="https://unpkg.com/scrollreveal"></script>
-
-      <!-- TYPED JS  -->
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-        <!-- MAIN JS  -->
-    <script src="main.js"></script>
+<section class="sec contact" id="contact">
+  <h2 class="big reveal">Have a project or an opening?</h2>
+  <p class="reveal">I reply within a day. Let's talk about how I can help your team.</p>
+  <a class="btn mag big-btn reveal" href="mailto:guravswapnali1512@gmail.com"><i class="fa-solid fa-envelope"></i> guravswapnali1512@gmail.com</a>
+  <div class="cl reveal"><a href="tel:+918767739436"><i class="fa-solid fa-phone"></i> +91 87677 39436</a><a href="https://linkedin.com/in/swapnali-gurav-99684b287"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a><a href="https://github.com/SwapnaliGurav"><i class="fa-brands fa-github"></i> GitHub</a><span><i class="fa-solid fa-location-dot"></i> Satara, Maharashtra</span></div>
+</section>
+</main>
+<footer>&copy; 2026 Swapnali Gurav. Built with HTML, CSS and JavaScript.</footer>
+<script src="main.js"></script>
 </body>
 </html>
